@@ -63,6 +63,3 @@ cat csv
 ``` 
 python3 ebay_dl.py cat --csv 
 ```
-
-#Instructions for the HW:
-[link](https://github.com/mikeizbicki/cmc-csci040/blob/2021fall/hw_03/README.md)
