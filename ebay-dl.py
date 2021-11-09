@@ -51,7 +51,7 @@ def parse_price(text):
     if 'Free' in text:
         return 0
     else:
-        return int(numbers)
+        return (int(numbers))
 
 
 # this if statement says only run the code below when the pythoon file is run normally, meaning not inside the doctests/ 
@@ -77,12 +77,12 @@ if __name__ == '__main__':
         url = 'https://www.ebay.com/sch/i.html?_from=R40&_nkw='+ args.search_term + '&_sacat=0&_pgn=' + str(page_number) + '&rt=nc'
         r = requests.get(url)
         r.status_code
-        print ("url = " + url)
+        print(url)
 
         # download the html
         r = requests.get(url)
         status = r.status_code
-        print ('status = ', status)
+        print (status)
 
         html = r.text
         #print ("html = ", html[:50])
@@ -124,7 +124,7 @@ if __name__ == '__main__':
             price = 0
             tags_price = tag_item.select('.s-item__price')
             for tag in tags_price:
-                # print('tag = ', parse_price(tag.text))
+                print ('tag = ', tag)
                 price = parse_price(tag.text)
             
             #extract shipping
