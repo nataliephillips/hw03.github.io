@@ -43,7 +43,7 @@ def parse_price(text):
     1580
     '''
     numbers = ''
-    if text.find("$")!=-1:
+    if text.find("$")==-1:
         return 0
     if text.find("to")!=-1:
         text = text[:text.find("to")]
@@ -126,7 +126,7 @@ if __name__ == '__main__':
             price = None
             tags_price = tag_item.select('.s-item__price')
             for tag in tags_price:
-                print ('tag = ', tag)
+                # print ('tag = ', tag)
                 price = parse_price(tag.text)
             
             #extract shipping
