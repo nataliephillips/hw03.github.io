@@ -1,7 +1,7 @@
 # HW 03 WebScraping
 ### Link to Instructions: [**instructions!!!** ](https://github.com/mikeizbicki/cmc-csci040/tree/2021fall/hw_03)
 
-## What Am I doing?
+## What Am I doing? (she said to herself)
 For this homework, I am scraping information from ebay and storing the results in a json and csv files.
 To start, I added in command items to be able to choose which ebay web pages that I opened and scraped information from. I defined what I wanted to search, how many pages of the search I wanted and how I would display the information. I then looped over the specified number of webpages to get each items name, price, status, shipping cost, return value and number of items sold. Once extracted, I inputted those values into a json list of libraries to keep everything organized. It downloads the first 10 pages of a specific search term from ebay.
 
