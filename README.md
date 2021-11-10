@@ -26,8 +26,7 @@ specifying number of pages:
 python3 ebay_dl.py hammer --num_pages=1
 ```
 
-the default ouput file is json, so you don't have to specify anything for json
-to change to csv: 
+the default ouput file is json, so you don't have to specify anything for json, but to change to csv: 
 ``` 
 python3 ebay_dl.py hammer --csv
 ```
